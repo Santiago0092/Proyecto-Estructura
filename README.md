@@ -1,3 +1,8 @@
+A continuacion vamos a dejar el codigo completo de estructuración, diseño y funcionamiento del modulo de priorizacion en la construcción el color principal de nuestra pagina que vamos a usar será el naranja, azul y blanco
+ 
+ 
+ 
+ 
  CODIGO EN HTML
 
 
