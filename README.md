@@ -2,6 +2,7 @@ Nuestra pagina web tiene como colores principales el blanco, el naranja y el azu
    
    Elemento                       Codigo color      Color                       
 //////////////////////////////////////////////////////////////////////////////
+
     Fondo general                  `#f2f2f2`        Gris claro, suave y neutro          
     Fondo contenedor               `#ffffff`        Blanco puro                        
     Título y encabezados de tabla  `#004080`        Azul oscuro                         
