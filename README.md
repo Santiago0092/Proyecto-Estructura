@@ -17,17 +17,19 @@ Nuestra pagina web tiene como colores principales el blanco, el naranja y el azu
 
 
  /// Codigo html
- <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Calculadora ABC de Construcción</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Calculadora ABC - Construcción</h1>
-    
+
+
+    <!DOCTYPE html>
+    <html lang="es">
+     <head>
+      <meta charset="UTF-8">
+     <title>Calculadora ABC de Construcción</title>
+     <link rel="stylesheet" href="styles.css">
+     </head>
+     <body>
+     <div class="container">
+      <h1>Calculadora ABC - Construcción</h1>
+     
     <form id="formulario">
       <label for="presupuesto">Presupuesto (COP):</label>
       <input type="number" id="presupuesto" required>
@@ -45,11 +47,11 @@ Nuestra pagina web tiene como colores principales el blanco, el naranja y el azu
     <div id="resultado" class="resultado">
       <!-- Aquí aparece la tabla generada -->
     </div>
-  </div>
+    </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+    <script src="script.js"></script>
+    </body>
+    </html>
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -58,101 +60,99 @@ Nuestra pagina web tiene como colores principales el blanco, el naranja y el azu
 CODIGO CSS 
 
 
-body {
-  font-family: Arial, sans-serif;
-  background: #f2f2f2;
-  margin: 0;
-  padding: 0;
-}
 
-.container {
-  width: 90%;
-  max-width: 900px;
-  margin: 30px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
+    body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    }
 
-h1 {
-  text-align: center;
-  color: #004080;
-}
+    .container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
 
-form {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-}
+     h1 {
+    text-align: center;
+    color: #004080;
+    }
 
-form label {
-  font-weight: bold;
-}
+    form {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+     }
 
-form input, form select, form button {
-  padding: 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
+    form label {
+     font-weight: bold;
+    }
 
-form button {
-  background: #ff8000;
-  color: white;
-  cursor: pointer;
-  border: none;
-}
+    form input, form select, form button {
+       padding: 8px;
+       border-radius: 6px;
+       border: 1px solid #ccc;
+      }
 
-form button:hover {
-  background: #e67300;
-}
+    form button {
+     background: #ff8000;
+     color: white;
+     cursor: pointer;
+     border: none;
+    }
 
-.resultado {
-  margin-top: 20px;
-}
+    form button:hover {
+     background: #e67300;
+    }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+    .resultado {
+     margin-top: 20px;
+     }
 
-table th, table td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: center;
-}
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
 
-table th {
-  background: #004080;
-  color: white;
-}
+     table th, table td {
+       border: 1px solid #ddd;
+       padding: 10px;
+       text-align: center;
+    }
 
-.resumen {
-  margin-top: 15px;
+    table th {
+     background: #004080;
+     color: white;
+    }    
+
+    .resumen {
+    margin-top: 15px;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 JAVASCRIPT FUNCIONAMIENTO
 
-
-// Datos de elementos (seguridad + construcción)
-
-
-
-const elementos = {
-  seguridad: [
-  
+      const elementos = {
+     seguridad: [
     { name: "Arnés", cls: "A", cost: 150000 },
     { name: "Cascos de seguridad", cls: "A", cost: 30000 },
     { name: "Chalecos de seguridad", cls: "A", cost: 30000 },
     { name: "Gafas de seguridad", cls: "A", cost: 10000 },
     { name: "Guantes de seguridad", cls: "A", cost: 10000 },
     { name: "Cintas de demarcación", cls: "A", cost: 35000 }
-  ],
-  casa: {
+
+ 
+ 
+    ],
+     casa: {
     bajo: [
       { name: "Excavadora", cls: "A", cost: 430000 },
       { name: "Mezcladora de concreto", cls: "A", cost: 87000 },
@@ -168,8 +168,8 @@ const elementos = {
       { name: "Montacargas", cls: "B", cost: 500000 },
       { name: "Camioneta doble cabina", cls: "B", cost: 600000 }
     ]
-  },
-  edificio: {
+     },
+    edificio: {
     bajo: [
       { name: "Excavadora rodillo", cls: "A", cost: 704000 },
       { name: "Andamios y componentes", cls: "A", cost: 237000 }
@@ -183,8 +183,8 @@ const elementos = {
       { name: "Excavadora rodillo", cls: "A", cost: 704000 },
       { name: "Andamios y componentes", cls: "A", cost: 475800 }
     ]
-  },
-  puente: {
+    },
+    puente: {
     bajo: [
       { name: "Piloteadora pequeña", cls: "A", cost: 1000000 }
     ],
@@ -196,71 +196,71 @@ const elementos = {
       { name: "Piloteadora grande", cls: "A", cost: 4000000 },
       { name: "Grúas móviles", cls: "A", cost: 1479000 }
     ]
-  }
-};
+    }
+    };
 
-// Formato dinero
-function formatMoney(num) {
-  return num.toLocaleString("es-CO", { style: "currency", currency: "COP" });
-}
+    // Formato dinero
+    function formatMoney(num) {
+    return num.toLocaleString("es-CO", { style: "currency", currency: "COP" });
+     }
 
-// Renderizar tabla
-function renderTable(items) {
-  return items.map(it => `
+    // Renderizar tabla
+    function renderTable(items) {
+    return items.map(it => `
     <tr>
       <td>${it.name}</td>
       <td>${it.cls}</td>
       <td>${formatMoney(it.cost)}</td>
     </tr>
-  `).join("");
-}
+    `).join("");
+    }
 
-// Manejo de formulario
-document.getElementById("formulario").addEventListener("submit", e => {
-  e.preventDefault();
+    // Manejo de formulario
+    document.getElementById("formulario").addEventListener("submit", e => {
+    e.preventDefault();
   
-  const presupuesto = parseInt(document.getElementById("presupuesto").value);
-  const tipo = document.getElementById("tipo").value;
-  let seleccion = null;
-  let nivel = "";
+    const presupuesto = parseInt(document.getElementById("presupuesto").value);
+    const tipo = document.getElementById("tipo").value;
+    let seleccion = null;
+     let nivel = "";
 
-  // Siempre seguridad
-  let items = [...elementos.seguridad];
-  let costoSeguridad = items.reduce((s, x) => s + x.cost, 0);
+    // Siempre seguridad
+    let items = [...elementos.seguridad];
+    let costoSeguridad = items.reduce((s, x) => s + x.cost, 0);
 
-  if (presupuesto < costoSeguridad) {
+    if (presupuesto < costoSeguridad) {
     document.getElementById("resultado").innerHTML = `
       <div class="resumen">
         El presupuesto ingresado es insuficiente incluso para seguridad básica.
       </div>`;
     return;
-  }
-
-  // Decidir nivel
-  if (presupuesto < 10000000) {
+    }
+ 
+    // Decidir nivel
+    if (presupuesto < 10000000) {
     seleccion = elementos[tipo].bajo;
     nivel = "BAJO";
-  } else if (presupuesto < 50000000) {
+    } else if (presupuesto < 50000000) {
     seleccion = elementos[tipo].intermedio;
     nivel = "INTERMEDIO";
-  } else {
+    } else {
     seleccion = elementos[tipo].alto;
     nivel = "ALTO";
-  }
+    }
 
-  items = items.concat(seleccion);
+    items = items.concat(seleccion);
 
-  let total = items.reduce((s, x) => s + x.cost, 0);
+    let total = items.reduce((s, x) => s + x.cost, 0);
 
-  if (total > presupuesto) {
+    if (total > presupuesto) {
     document.getElementById("resultado").innerHTML = `
       <div class="resumen">
         El presupuesto ingresado es insuficiente para cubrir el nivel mínimo de esta construcción.
       </div>`;
     return;
-  }
+    }
 
-  document.getElementById("resultado").innerHTML = `
+    document.getElementById("resultado").innerHTML = `
     <h2>${tipo.charAt(0).toUpperCase() + tipo.slice(1)}</h2>
     <p>Nivel seleccionado por presupuesto: <b>${nivel}</b></p>
     <table>
@@ -279,14 +279,12 @@ document.getElementById("formulario").addEventListener("submit", e => {
       <p><b>Presupuesto:</b> ${formatMoney(presupuesto)}</p>
       <p><b>Total utilizado:</b> ${formatMoney(total)}</p>
       <p><b>Disponible:</b> ${formatMoney(presupuesto - total)}</p>
-    </div>
-  `;
-});
+     </div> `;});
 
   
-  padding: 10px;
-  background: #eef;
-  border-left: 4px solid #004080;
-}
+    padding: 10px;
+    background: #eef;
+    border-left: 4px solid #004080;
+    }
 
  
