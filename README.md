@@ -1,7 +1,16 @@
-A continuacion vamos a dejar el codigo completo de estructuración, diseño y funcionamiento del modulo de priorizacion en la construcción el color principal de nuestra pagina que vamos a usar será el naranja, azul y blanco
- 
- 
- 
+Nuestra pagina web tiene como colores principales el blanco, el naranja y el azul, a continuacion se hizo una tabla con el codigo de los colores y en donde se presentan
+   
+   Elemento                       Codigo color      Color                       
+//////////////////////////////////////////////////////////////////////////////
+    Fondo general                  `#f2f2f2`        Gris claro, suave y neutro          
+    Fondo contenedor               `#ffffff`        Blanco puro                        
+    Título y encabezados de tabla  `#004080`        Azul oscuro                         
+    Botón principal                `#ff8000`        Naranja brillante, destaca          
+    Botón hover                    `#e67300`        Naranja más oscuro, efecto dinámico 
+    Bordes de campos y celdas      `#ccc` / `#ddd`  Grises claros                       
+
+
+ dejamos el codigo completo de la estructuracion, diseño y funcionalidad de la pagina web del modulo de priorizacion en construcción
  
  CODIGO EN HTML
 
